@@ -4,20 +4,51 @@
   <head>
     <title>Kairui's Website</title>
     <meta charset='UTF-8'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Kairui's personal website made for web development practice.">
     <link rel="stylesheet" href="./styles.css">
   </head>
 
   <body>
-    <div id="welcome" class="section">
-      <div class="main-title">Welcome!</div>
-      <div class="title-description">I'm Kairui. Thank you for visiting my website, take your time looking around!</div>
+
+    <div id="navbar">
+      <div class="logo"></div>
+      <ul class="nav-list">
+        <li><a class="bookmark" href="#">Home</a></li>
+        <li><a class="bookmark" href="#">About Me</a></li>
+        <li><a class="bookmark" href="#">My Projects</a></li>
+        <li><a class="bookmark" href="#">Contact Info</a></li>
+      </ul>
+      <div class="settings">
+        <img src="images/settings.svg" alt="Settings">
+      </div>
     </div>
-    <div id="aboutme" class="section">
+    
+    <div id="main-container">
+
+      <div class="welcome section">
+        <div class="welcome-background">
+          <div class="main-title">Welcome!</div>
+          <div class="title-description">I'm Kairui. Thank you for visiting my website, take your time looking around!</div>
+        </div>
+      </div>
+
+      <div class="aboutme section">
+        <div class="header">About Me</div>
+        <div>Education: I'm currently in my 3A term of Computer Science at the University of Waterloo.</div>
+        <div>Hobbies: My favourite sport is badminton, and I try to keep active by weightlifting. During my free time, I enjoy puzzle games, reading, and listening to music.</div>
+        <div>Languages: I'm a programmer most proficient in JavaScript, followed by C++. I also know Mandarin :)</div>
+      </div>
+
+    </div>
+
+    <!--<div id="aboutme" class="section">
       <div class="header">About Me</div>
       <div>Education: I'm currently in my 3A term of Computer Science at the University of Waterloo.</div>
       <div>Hobbies: My favourite sport is badminton, and I try to keep active by weightlifting. During my free time, I enjoy puzzle games, reading, and listening to music.</div>
       <div>Languages: I'm a programmer most proficient in JavaScript, followed by C++. I also know Mandarin :)</div>
     </div>
+
     <div id="projects" class="section">
       <div class="header">My Projects</div>
       <div class="flex-container">
@@ -25,6 +56,7 @@
         <div>Sudoku Solver</div>
       </div>
     </div>
+
     <div id="contact" class="section">
       <div class="header">Contact Info</div>
       <div>Phone</div>
@@ -32,6 +64,7 @@
       <div>LinkedIn</div>
       <div>GitHub</div>
       <div>Resume</div>
-    </div>
+    </div>-->
+    
   </body>
 </html>

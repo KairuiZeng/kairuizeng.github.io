@@ -1,36 +1,105 @@
-html, body {
-  font-family: 'Montserrat', sans-serif;
+/* General */
+* {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.section {
+  width: 100%;
+}
+
+/* Navigation Bar */
+#navbar {
+  background-color: #ffffffbf;
+  display: flex;
+  align-items: center;
+  margin: auto;
+  height: 10vh;
+  min-height: 80px;
+  width: 100%;
+  border-bottom: #131450 3px solid;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transition: 250ms;
+}
+
+#navbar:hover {
+  background-color: #ffffff;
+}
+
+.logo, .nav-list, .settings {
+  display: flex;
+}
+
+.nav-list {
+  flex: 8;
+  list-style: none;
+  justify-content: space-around;
+}
+
+.bookmark {
+  text-decoration: none;
+  font-size: 1.25em;
+  transition: 500ms;
+}
+
+.bookmark:hover {
+  color: #69B3E7;
+}
+
+.settings {
+  flex: 1;
+}
+
+.settings > img {
+  height: 40px;
+  width: 60px;
+}
+
+.settings > img:hover {
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+  transition: 1s;
+}
+
+/* Landing Page */
+#main-container {
+  height: 100%;
+  width: 100%;
+}
+
+.welcome {
   height: 100%;
 }
 
-#welcome {
+.welcome-background {
+  height: 100vh;
   width: 100%;
-  height: 100%;
   background-image: url('https://images.pexels.com/photos/1054222/pexels-photo-1054222.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  box-shadow: 0 0 8px 8px white inset;
-  position: relative;
+  text-align: center;
 }
 
 .main-title {
-  text-align: center;
+  padding-top: 30vh;
   font-size: 6em;
   font-weight: 900;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  position: absolute;
 }
 
 .title-description {
-  text-align: center;
   font-size: 2em;
-  width:50%;
-  top: 55%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  position: absolute;
+  width: 55vw;
+  min-width: 450px;
+  display: inline-block;
 }
