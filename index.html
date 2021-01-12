@@ -14,8 +14,8 @@
     <div id="navbar">
       <div class="logo"></div>
       <ul class="nav-list">
-        <li><a class="bookmark" href="#">Home</a></li>
-        <li><a class="bookmark" href="#">About Me</a></li>
+        <li><a class="bookmark" href="#welcome">Home</a></li>
+        <li><a class="bookmark" href="#aboutme">About Me</a></li>
         <li><a class="bookmark" href="#">My Projects</a></li>
         <li><a class="bookmark" href="#">Contact Info</a></li>
       </ul>
@@ -26,18 +26,27 @@
     
     <div id="main-container">
 
-      <div class="welcome section">
+      <div id="welcome" class="welcome section">
         <div class="welcome-background">
           <div class="main-title">Welcome!</div>
           <div class="title-description">I'm Kairui. Thank you for visiting my website, take your time looking around!</div>
         </div>
       </div>
 
-      <div class="aboutme section">
-        <div class="header">About Me</div>
-        <div>Education: I'm currently in my 3A term of Computer Science at the University of Waterloo.</div>
-        <div>Hobbies: My favourite sport is badminton, and I try to keep active by weightlifting. During my free time, I enjoy puzzle games, reading, and listening to music.</div>
-        <div>Languages: I'm a programmer most proficient in JavaScript, followed by C++. I also know Mandarin :)</div>
+      <div id="aboutme" class="aboutme section">
+        <div class="aboutme-title">About Me</div>
+        <div class="aboutme-content">
+          <div class="aboutme-image">
+            <img src="images/myface.png">
+          </div>
+          <ul class="aboutme-text">
+            <li>Hello there! My name is Kairui Zeng. I'm a co-op student currently in the search for software development internships.</li>
+            <li><span class="aboutme-key">Education: </span>I'm currently in my 3A term of Computer Science at the University of Waterloo.</li>
+            <li>Right now, I'm taking courses on database management, applied cryptography, operating systems, and algorithms!</li>
+            <li><span class="aboutme-key">What I Do: </span>I'm a programmer most proficient in JavaScript, followed by C++. My experiences in my past 3 internships center around web and back-end development, specifically with RESTful APIs.</li>
+            <li><span class="aboutme-key">Hobbies: </span>My favourite sport is badminton and I try to keep active by doing weightlifting. In my free time, I enjoy puzzle games, reading, and listening to music.</li>
+          </ul>
+        </div>
       </div>
 
     </div>

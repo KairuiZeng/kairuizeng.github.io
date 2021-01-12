@@ -5,6 +5,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Montserrat', sans-serif;
 }
@@ -92,7 +96,7 @@ body {
 }
 
 .main-title {
-  padding-top: 30vh;
+  padding-top: 35vh;
   font-size: 6em;
   font-weight: 900;
 }
@@ -101,5 +105,52 @@ body {
   font-size: 2em;
   width: 55vw;
   min-width: 450px;
-  display: inline-block;
+  display: inline-block; /* Not really sure why this is needed */
+}
+
+/* About Me Section */
+.aboutme-title {
+  padding-top: 10vh;
+  padding-bottom: 5vh;
+  font-size: 3.5em;
+  text-align: center;
+}
+
+.aboutme-content {
+  font-size: 1.25em;
+  display: flex;
+  width: 80vw;
+  min-width: 500px;
+  margin: auto;
+  align-items: center;
+}
+
+.aboutme-key {
+  color: #071D49;
+  font-weight: bold;
+}
+
+.aboutme-image {
+  flex: 3;
+  padding: 70px;
+}
+
+.aboutme-text {
+  flex: 7;
+  list-style: none;
+}
+
+.aboutme-text > li {
+  padding: 20px;
+}
+
+.aboutme-image {
+  text-align: center;
+  
+}
+
+.aboutme-image > img {
+  padding: 50px;
+  border-radius: 10% 30%;
+  background-color: #4E5B73;
 }
