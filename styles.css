@@ -13,6 +13,10 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
+a {
+  text-decoration: none;
+}
+
 .section {
   width: 100%;
 }
@@ -26,11 +30,12 @@ body {
   height: 10vh;
   min-height: 80px;
   width: 100%;
-  border-bottom: #131450 3px solid;
+  border-bottom: 3px solid #131450;
   position: fixed;
   top: 0;
   left: 0;
   transition: 250ms;
+  z-index: 10;
 }
 
 #navbar:hover {
@@ -48,7 +53,6 @@ body {
 }
 
 .bookmark {
-  text-decoration: none;
   font-size: 1.25em;
   transition: 500ms;
 }
@@ -83,6 +87,7 @@ body {
 
 .welcome {
   height: 100%;
+  border-bottom: 10px double #131450;
 }
 
 .welcome-background {
@@ -109,6 +114,11 @@ body {
 }
 
 /* About Me Section */
+.aboutme {
+  border-bottom: 10px double #131450;
+  padding-bottom: 10vh;
+}
+
 .aboutme-title {
   padding-top: 10vh;
   padding-bottom: 5vh;
@@ -127,12 +137,14 @@ body {
 
 .aboutme-key {
   color: #071D49;
-  font-weight: bold;
+  font-weight: 900;
+  text-decoration: underline;
 }
 
 .aboutme-image {
   flex: 3;
-  padding: 70px;
+  padding: 70px 70px 70px 0;
+  text-align: center;
 }
 
 .aboutme-text {
@@ -144,13 +156,90 @@ body {
   padding: 20px;
 }
 
-.aboutme-image {
-  text-align: center;
-  
-}
-
 .aboutme-image > img {
   padding: 50px;
   border-radius: 10% 30%;
   background-color: #4E5B73;
+}
+
+/* Projects */
+.projects {
+  border-bottom: 10px double #131450;
+  padding-bottom: 10vh;
+}
+
+.project-title {
+  padding-top: 10vh;
+  padding-bottom: 2vh;
+  font-size: 3.5em;
+  text-align: center;
+}
+
+.project-subtitle {
+  padding-bottom: 10vh;
+  width: 80%;
+  margin:auto;
+  font-size: 1.5em;
+  text-align: center;
+}
+
+.projects-list {
+  margin: auto;
+  width: 80%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.project-wrapper {
+  position: relative;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.project-background {
+  height: 400px;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: 5px solid #000000;
+  transition: 500ms;
+}
+
+.project-text-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  text-align: center;
+  padding-left: 50px;
+  padding-right: 50px;
+  color: transparent;
+  transition: 1s;
+}
+
+.project-name {
+  font-size: 1.3em;
+  font-weight: bold;
+}
+
+.project-description {
+  padding-top: 10px;
+  font-size: 0.85em;
+}
+
+.project-text-wrapper:hover .project-name{
+  color: #2CD5C4;
+}
+
+.project-text-wrapper:hover .project-description{
+  color: #ffffff;
+}
+
+.darken-background {
+  filter: brightness(10%);
 }
