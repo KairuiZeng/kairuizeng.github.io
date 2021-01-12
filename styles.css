@@ -25,6 +25,7 @@ a {
 #navbar {
   background-color: #ffffffbf;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   margin: auto;
   height: 10vh;
@@ -47,7 +48,7 @@ a {
 }
 
 .nav-list {
-  flex: 8;
+  flex: 90%;
   list-style: none;
   justify-content: space-around;
 }
@@ -62,7 +63,7 @@ a {
 }
 
 .settings {
-  flex: 1;
+  flex: 10%;
 }
 
 .settings > img {
@@ -129,6 +130,7 @@ a {
 .aboutme-content {
   font-size: 1.25em;
   display: flex;
+  flex-wrap: wrap;
   width: 80vw;
   min-width: 500px;
   margin: auto;
@@ -150,6 +152,7 @@ a {
 .aboutme-text {
   flex: 7;
   list-style: none;
+  min-width: 500px;
 }
 
 .aboutme-text > li {
@@ -184,20 +187,21 @@ a {
 }
 
 .projects-list {
-  margin: auto;
-  width: 80%;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .project-wrapper {
+  padding: 25px;
   position: relative;
-  padding-left: 25px;
-  padding-right: 25px;
+  width: 550px;
+  height: 550px;
 }
 
 .project-background {
-  height: 400px;
+  height: 100%;
   width: 100%;
   background-size: cover;
   background-position: center;
@@ -213,11 +217,10 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  height: 100%;
-  text-align: center;
   padding-left: 50px;
   padding-right: 50px;
+  height: 100%;
+  text-align: center;
   color: transparent;
   transition: 1s;
 }
@@ -242,4 +245,25 @@ a {
 
 .darken-background {
   filter: brightness(10%);
+}
+
+/* Contact Info */
+.contact {
+  border-bottom: 10px double #131450;
+  padding-bottom: 10vh;
+}
+
+.contact-title {
+  padding-top: 10vh;
+  padding-bottom: 2vh;
+  font-size: 3.5em;
+  text-align: center;
+}
+
+.contact-subtitle {
+  padding-bottom: 10vh;
+  width: 80%;
+  margin:auto;
+  font-size: 1.5em;
+  text-align: center;
 }
