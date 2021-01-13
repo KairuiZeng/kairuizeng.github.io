@@ -82,11 +82,21 @@
       <div id="contact" class="contact section">
         <div class="contact-title">Contact Info</div>
         <div class="contact-subtitle">Feel free to reach out to me through any of these platforms!</div>
-        <div>Phone</div>
-        <div>Email</div>
-        <div>LinkedIn</div>
-        <div>GitHub</div>
-        <div>Resume</div>
+        <div class="contact-list">
+          <a href="mailto:kairui.zeng@uwaterloo.ca" class="contact-icon">
+            <img src="images/email.svg">
+            <div>Email</div>
+          </a>
+          <a href="https://www.linkedin.com/in/kairui-zeng/" class="contact-icon" target="_blank">
+            <img src="images/linkedin.svg">
+            <div>LinkedIn</div>
+          </a>
+          <a href="https://github.com/KairuiZeng" class="contact-icon" target="_blank">
+            <img src="images/github.svg">
+            <div>GitHub</div>
+          </a>
+        </div>
+        <div class="resume-contact">Want to check out my job experiences?<br>Click <a href="resume.pdf" target="_blank">here</a> to learn more through my resume!</div>
       </div>
     </div>
   </body>
@@ -100,6 +110,13 @@
       project.addEventListener('mouseout', () => {
         project.children[0].classList.remove('darken-background');
       });
+    });
+  </script>
+
+  <script>
+    const settingsCog = document.querySelector('.settings');
+    settingsCog.addEventListener('click', () => {
+      alert('No settings have been created yet!\n\n:(');
     });
   </script>
 
